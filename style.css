@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+header {
+    background-color: lightgreen;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+}
+
+header>* {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper1 {
+    width: 60%;
+    gap: 2.5vw;
+    justify-content: space-around;
+}
+
+.wrapper1>* {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#filler1 {
+    width: 20%;
+}
+
+#filler2 {
+    width: 20%;
+}
+
+#rick {
+    position: fixed;
+    width: 120vw;
+    left: -10vw;
+    filter: opacity(0.4);
+}
+
+.wrapper2 {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#got {
+    font-size: 5vw;
+    animation: fade 1.5s forwards;
+}
+
+@keyframes fade {
+    0% {
+        filter: opacity(1);
+    }
+    100% {
+        filter: opacity(0);
+    }
+}
