@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.key-container {
+    display: flex;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.key {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border: 1px solid #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.key.active {
+    background-color: rgb(255, 132, 0);
+    color: #fff;
+}
